@@ -1,9 +1,17 @@
+'use client'
+
+import Navbar from "../navbar/page";
+import { useState, useEffect } from "react";
+
 export default function Skills() {
-    return (
-      <section id="skills">
-        <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-4xl font-semibold mb-8 text-white">My Skills</h2>
-          
+  return (
+    <main>
+      <Navbar />
+    <section id="skills" className="skills-section">
+      <div className="max-w-7xl mx-auto text-center">
+        <h2 className="text-4xl font-semibold mb-8 text-white">My Skills</h2>
+        
+        <div className="skills-container">
           <div className="skill-item">
             <h3>HTML & CSS</h3>
             <div className="progress-bar">
@@ -28,7 +36,8 @@ export default function Skills() {
             </div>
           </div>
         </div>
-      </section>
-    );
-  }
-  
+      </div>
+    </section>
+    </main>
+  );
+}

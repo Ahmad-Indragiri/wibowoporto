@@ -1,16 +1,38 @@
+'use client'
+
+import Navbar from "../navbar/page";
+
 export default function Contact() {
-    return (
-      <section id="contact" className="bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 py-16">
+  return (
+    <main>
+      <Navbar />
+    <section id="contact" className="contact-section py-16">
+      <div className="container max-w-6xl mx-auto text-center">
+        <h2 className="section-title">Get in Touch</h2>
         <div className="contact-form">
-          <h2 className="text-3xl font-bold text-center mb-6">Get in Touch</h2>
-          <form>
-            <input type="text" placeholder="Your Name" required />
-            <input type="email" placeholder="Your Email" required />
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
+          <form className="form-grid">
+            <input 
+              type="text" 
+              placeholder="Your Name" 
+              required 
+              className="input-field" 
+            />
+            <input 
+              type="email" 
+              placeholder="Your Email" 
+              required 
+              className="input-field" 
+            />
+            <textarea 
+              placeholder="Your Message" 
+              required 
+              className="input-field" 
+            ></textarea>
+            <button type="submit" className="submit-btn">Send Message</button>
           </form>
         </div>
-      </section>
-    );
-  }
-  
+      </div>
+    </section>
+    </main>
+  );
+}
